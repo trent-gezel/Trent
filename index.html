@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html class="bg-nav_bar">
+
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@2.22.0/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://kit.fontawesome.com/e311482788.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@1.5.7/dist/lottie-player.js"></script>
+    <link rel="icon" type="image/x-icon" href="https://cdn.gezel.io/logos/transparent/gezel.png">
+    <meta property='og:description' content="About IRLCreate" />
+    <meta property="og:image" content="https://cdn.gezel.io/logos/transparent/gezel.png" />
+    <meta charset="UTF-8">
+    <meta property="og:author" content="Gezel io" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/flowbite@1.4.7/dist/flowbite.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://gezel.io/js/tailwind.js"></script>
+    <title>IRLCreate - About Me</title>
+    <meta name="keywords"
+        content="gezel, gezelio, mystlink, mystl.ink, youtube channel rewards, youtube channel points, YTCR, streamer.bot, streamerbot">
+    <meta name="description"
+        content="IRLCreate is a YouTuber and content creator who releases content about streaming and tech-related topics">
+    <meta property='og:title' content=''>
+</head>
+
+<body :class="{ 'overflow-hidden max-h-screen': mobileMenu }" class="relative" x-data="{ mobileMenu: false }">
+
+    <div id="main" class="relative">
+        <div x-data="{
+    triggerNavItem(id) {
+        $scroll(id)
+    },
+    triggerMobileNavItem(id) {
+        mobileMenu = false;
+        this.triggerNavItem(id)
+    }
+}">
+
+            <div>
+                <div class="relative bg-cover bg-center bg-no-repeat py-8"
+                    style="background-image: url(/assets/img/bg-hero.jpg)">
+                    <div
+                        class="absolute inset-0 z-20 bg-gradient-to-r from-hero-gradient-from to-hero-gradient-to bg-cover bg-center bg-no-repeat">
+                    </div>
+
+                    <div class="container relative z-30 pt-20 pb-12 sm:pt-56 sm:pb-48 lg:pt-64 lg:pb-48">
+                        <div class="flex flex-col items-center justify-center lg:flex-row">
+                            <div class="rounded-full border-8 border-botred shadow-xl">
+                                <img src="/assets/img/blog-author.jpg" class="h-48 rounded-full sm:h-56" alt="author" />
+                            </div>
+                            <div class="pt-8 sm:pt-10 lg:pl-8 lg:pt-0">
+                                <h1
+                                    class="text-center font-header text-4xl text-white sm:text-left sm:text-5xl md:text-6xl">
+                                    👋, I'm Tommy Lundy
+                                </h1>
+                                <div class="flex flex-col justify-center pt-3 sm:flex-row sm:pt-5 lg:justify-start">
+                                    <div class="flex items-center justify-center pl-0 sm:justify-start md:pl-1">
+                                        <p class="font-body text-lg uppercase text-white">Learn about me</p>
+                                        <div class="hidden sm:block">
+                                            <i class="bx bx-chevron-right text-3xl text-yellow"></i>
+                                        </div>
+                                    </div>
+                                    <div class="flex items-center justify-center pt-5 pl-2 sm:justify-start sm:pt-0">
+                                        <a href="/">
+                                            <i class="bx bxl-facebook-square text-2xl text-white hover:text-yellow"></i>
+                                        </a>
+                                        <a href="/" class="pl-4">
+                                            <i class="bx bxl-twitter text-2xl text-white hover:text-yellow"></i>
+                                        </a>
+                                        <a href="/" class="pl-4">
+                                            <i class="bx bxl-dribbble text-2xl text-white hover:text-yellow"></i>
+                                        </a>
+                                        <a href="/" class="pl-4">
+                                            <i class="bx bxl-linkedin text-2xl text-white hover:text-yellow"></i>
+                                        </a>
+                                        <a href="/" class="pl-4">
+                                            <i class="bx bxl-instagram text-2xl text-white hover:text-yellow"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-grey-50" id="about">
+                    <div class="container flex flex-col items-center py-16 md:py-20 lg:flex-row">
+                        <div class="w-full text-center sm:w-3/4 lg:w-3/5 lg:text-left">
+                            <h2
+                                class="font-header text-4xl font-semibold uppercase text-botred sm:text-5xl lg:text-6xl">
+                                Who am I?
+                            </h2>
+                            <h4 class="pt-6 font-header text-xl font-medium text-white sm:text-2xl lg:text-3xl">
+                                I'm Tommy Lundy, a frontend developer and content creator
+                            </h4>
+                            <p class="pt-6 font-body leading-relaxed text-grey-20">
+                                I love thinking of ideas how content creation can be done simpler, and more efficient. I
+                                founded <a href="https://gezel.io" class="text-botred underline">Gezel.io</a> to help
+                                content creators with different tools.
+                            </p>
+                            <div class="flex flex-col justify-center pt-6 sm:flex-row lg:justify-start">
+                                <div class="flex items-center justify-center sm:justify-start">
+                                    <p class="font-body text-lg font-semibold uppercase text-grey-20">
+                                        Tools I've Worked On
+                                    </p>
+                                    <div class="hidden sm:block">
+                                        <i class="bx bx-chevron-right text-2xl text-botred"></i>
+                                    </div>
+                                </div>
+                                <div class="flex items-center justify-center pt-5 pl-2 sm:justify-start sm:pt-0">
+                                    <a href="/">
+                                        <i class="bx bxl-facebook-square text-2xl text-botred hover:text-yellow"></i>
+                                    </a>
+                                    <a href="/" class="pl-4">
+                                        <i class="bx bxl-twitter text-2xl text-botred hover:text-yellow"></i>
+                                    </a>
+                                    <a href="/" class="pl-4">
+                                        <i class="bx bxl-dribbble text-2xl text-botred hover:text-yellow"></i>
+                                    </a>
+                                    <a href="/" class="pl-4">
+                                        <i class="bx bxl-linkedin text-2xl text-botred hover:text-yellow"></i>
+                                    </a>
+                                    <a href="/" class="pl-4">
+                                        <i class="bx bxl-instagram text-2xl text-botred hover:text-yellow"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="w-full pl-0 pt-10 sm:w-3/4 lg:w-2/5 lg:pl-12 lg:pt-0">
+                            <div>
+                                <div class="flex items-end justify-between">
+                                    <a href="https://mystl.ink"
+                                        class="font-body font-semibold uppercase text-white hover:text-botred px-2">
+                                        Mystl.ink
+                                    </a>
+                                    <h3 class="font-body font-bold text-botred p-2">UI / UX Design</h3>
+                                </div>
+                                <div class="mt-2 h-3 w-full rounded-full bg-lila">
+                                    <div class="h-3 rounded-full bg-botred" style="width: 100%"></div>
+                                </div>
+                            </div>
+                            <div class="pt-6">
+                                <div class="flex items-end justify-between">
+                                    <a href="https://bot.gezel.io"
+                                        class="font-body font-semibold uppercase text-white hover:text-botred px-2">
+                                        Gezel Bot
+                                    </a>
+                                    <h3 class="font-body font-bold text-botred p-2">Frontend Development / User
+                                        Enrichment</h3>
+                                </div>
+                                <div class="mt-2 h-3 w-full rounded-full bg-lila">
+                                    <div class="h-3 rounded-full bg-botred" style="width: 100%"></div>
+                                </div>
+                            </div>
+                            <div class="pt-6">
+                                <div class="flex items-end justify-between">
+                                    <a href="https://ytcr.gezel.io"
+                                        class="font-body font-semibold uppercase text-white hover:text-botred px-2">
+                                        YTCR
+                                    </a>
+                                    <h3 class="font-body font-bold text-botred p-2">Frontend / Backend Design</h3>
+                                </div>
+                                <div class="mt-2 h-3 w-full rounded-full bg-lila">
+                                    <div class="h-3 rounded-full bg-botred" style="width: 100%"></div>
+                                </div>
+                            </div>
+                            <div class="pt-6">
+                                <div class="flex items-end justify-between">
+                                    <a href="https://gezel.io/teams"
+                                        class="font-body font-semibold uppercase text-white hover:text-botred px-2">
+                                        Gezel Teams
+                                    </a>
+                                    <h3 class="font-body font-bold text-botred p-2">Frontend Development</h3>
+                                </div>
+                                <div class="mt-2 h-3 w-full rounded-full bg-lila">
+                                    <div class="h-3 rounded-full bg-botred" style="width: 100%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="container py-16 md:py-20" id="services">
+                    <h2
+                        class="text-center font-header text-4xl font-semibold uppercase text-botred sm:text-5xl lg:text-6xl">
+                        Deeper Dive
+                    </h2>
+                    <h3 class="pt-6 text-center font-header text-xl font-medium text-white sm:text-2xl lg:text-3xl">
+                        Here's what I specifically do
+                    </h3>
+
+                    <div class="grid grid-cols-1 gap-6 pt-10 sm:grid-cols-2 md:gap-10 md:pt-12 lg:grid-cols-3">
+                        <div class="group rounded px-8 py-12 shadow hover:bg-black">
+                            <div class="mx-auto h-24 w-24 text-center xl:h-28 xl:w-28">
+                                <div class="hidden group-hover:block">
+                                    <img src="/assets/img/icon-development-white.svg" alt="development icon" />
+                                </div>
+                                <div class="block group-hover:hidden">
+                                    <img src="/assets/img/icon-development-black.svg" alt="development icon" />
+                                </div>
+                            </div>
+                            <div class="text-center">
+                                <h3
+                                    class="pt-8 text-lg font-semibold uppercase text-botred group-hover:text-yellow lg:text-xl">
+                                    Frontend Web Development
+                                </h3>
+                                <p class="text-grey pt-4 text-sm group-hover:text-white md:text-base">
+                                    I build custom websites based on HTML and CSS (Tailwind CSS) with little to no .Js
+                                    for a quick and response touch. When Javascript is needed I reach out to
+                                    <a href="https://mastodon.au/trent1" class="hover:text-botred underline">Trent</a>
+                                    from <a href="https://gezel.io" class="hover:text-botred underline">Gezel.io</a> for
+                                    his
+                                    expertise.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="group rounded px-8 py-12 shadow hover:bg-black">
+                            <div class="mx-auto h-24 w-24 text-center xl:h-28 xl:w-28">
+                                <div class="hidden group-hover:block">
+                                    <img src="/assets/img/icon-email-white.svg" alt="Email Marketing icon" />
+                                </div>
+                                <div class="block group-hover:hidden">
+                                    <img src="/assets/img/icon-email-black.svg" alt="Email Marketing icon" />
+                                </div>
+                            </div>
+                            <div class="text-center">
+                                <h3
+                                    class="pt-8 text-lg font-semibold uppercase text-botred group-hover:text-yellow lg:text-xl">
+                                    General Web Development
+                                </h3>
+                                <p class="text-grey pt-4 text-sm group-hover:text-white md:text-base">
+                                    I spent most of my childhood building websites to insert iframes of my favourite
+                                    games rather than going to each games website to play them. Dial-up was slow, and no
+                                    one had time for MiniClip
+                                    or Kongregate to load, so why not build a landing page with all these games. Load
+                                    the page once, play for hours.<br><br>
+                                    This lead me down a path of "no-code" web development, including my found love for
+                                    WordPress on release. <br>
+                                    Since this I've always leaned on WordPress for my main site building, un less
+                                    something custom is required. But for blogs and other basic websites it's a CMS that
+                                    I rely on very often.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="group rounded px-8 py-12 shadow hover:bg-black">
+                            <div class="mx-auto h-24 w-24 text-center xl:h-28 xl:w-28">
+                                <div class="hidden group-hover:block">
+                                    <img src="/assets/img/icon-content-white.svg" alt="content marketing icon" />
+                                </div>
+                                <div class="block group-hover:hidden">
+                                    <img src="/assets/img/icon-content-black.svg" alt="content marketing icon" />
+                                </div>
+                            </div>
+                            <div class="text-center">
+                                <h3
+                                    class="pt-8 text-lg font-semibold uppercase text-botred group-hover:text-yellow lg:text-xl">
+                                    Graphic Design
+                                </h3>
+                                <p class="text-grey pt-4 text-sm group-hover:text-white md:text-base">
+                                    I personally use Affinity Design/Photo to design all logos and artwork on our
+                                    websites (when not using FontAwesome, of course). I started out my designing in
+                                    college working on local band logos and album art
+                                    which led me down a road of eventually doing Twitch/YouTube creator art, including
+                                    overlays and such to now a more business style icon designer.
+                                    I'm never satisfied with a design, and will always be changing the artwork
+                                    regularly, especially for Gezel.io.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="group rounded px-8 py-12 shadow hover:bg-black">
+                            <div class="mx-auto h-24 w-24 text-center xl:h-28 xl:w-28">
+                                <div class="hidden group-hover:block">
+                                    <img src="/assets/img/icon-mobile-white.svg" alt="Mobile Application icon" />
+                                </div>
+                                <div class="block group-hover:hidden">
+                                    <img src="/assets/img/icon-mobile-black.svg" alt="Mobile Application icon" />
+                                </div>
+                            </div>
+                            <div class="text-center">
+                                <h3
+                                    class="pt-8 text-lg font-semibold uppercase text-botred group-hover:text-yellow lg:text-xl">
+                                    Technical Support
+                                </h3>
+                                <p class="text-grey pt-4 text-sm group-hover:text-white md:text-base">
+                                    I pride myself in my support skills. As someone who's always worked in the field,
+                                    finding problems and resolving issues for users has always been a passion of mine.
+                                    No matter how big or small the problem, once I sink my teeth into it, finding a
+                                    resolution has such an affect of my mentallity I crave it everyday.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="container py-16 md:py-20" id="portfolio">
+                    <h2
+                        class="text-center font-header text-4xl font-semibold uppercase text-botred sm:text-5xl lg:text-6xl">
+                        Latest Artwork
+                    </h2>
+                    <h3 class="pt-6 text-center font-header text-xl font-medium text-white sm:text-2xl lg:text-3xl">
+                        Here's some of my latest artwork I've done for Gezel or myself
+                    </h3>
+
+                    <div
+                        class="mx-auto grid w-full grid-cols-1 gap-8 pt-12 sm:w-3/4 md:gap-10 lg:w-full lg:grid-cols-2">
+                        <a href="/" class="mx-auto transform transition-all hover:scale-105 md:mx-0">
+                            <img src="/assets/img/portfolio-apple.jpeg" class="w-full shadow" alt="portfolio image" />
+                        </a>
+                        <a href="/" class="mx-auto transform transition-all hover:scale-105 md:mx-0">
+                            <img src="/assets/img/portfolio-stripe.jpeg" class="w-full shadow" alt="portfolio image" />
+                        </a>
+                        <a href="/" class="mx-auto transform transition-all hover:scale-105 md:mx-0">
+                            <img src="/assets/img/portfolio-fedex.jpeg" class="w-full shadow" alt="portfolio image" />
+                        </a>
+                        <a href="/" class="mx-auto transform transition-all hover:scale-105 md:mx-0">
+                            <img src="/assets/img/portfolio-microsoft.jpeg" class="w-full shadow"
+                                alt="portfolio image" />
+                        </a>
+                    </div>
+                </div>
+
+                <div class="container py-16 md:py-20" id="work">
+                    <h2
+                        class="text-center font-header text-4xl font-semibold uppercase text-botred sm:text-5xl lg:text-6xl">
+                        My work experience
+                    </h2>
+                    <h3 class="pt-6 text-center font-header text-xl font-medium text-white sm:text-2xl lg:text-3xl">
+                        My most recent jobs and experience
+                    </h3>
+
+                    <div class="relative mx-auto mt-12 flex w-full flex-col lg:w-2/3">
+                        <span class="left-2/5 absolute inset-y-0 ml-10 hidden w-0.5 bg-grey-40 md:block"></span>
+
+                        <div class="mt-8 flex flex-col text-center md:flex-row md:text-left">
+                            <div class="md:w-2/5">
+                                <div class="flex justify-center md:justify-start">
+                                    <span class="shrink-0">
+                                        <img src="/" class="h-auto w-32" alt="cannot disclose at this time" />
+                                    </span>
+                                    <div class="relative ml-3 hidden w-full md:block">
+                                        <span
+                                            class="absolute inset-x-0 top-1/2 h-0.5 -translate-y-1/2 transform bg-grey-70"></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="md:w-3/5">
+                                <div class="relative flex md:pl-18">
+                                    <span
+                                        class="absolute left-8 top-1 hidden h-4 w-4 rounded-full border-2 border-grey-40 bg-white md:block"></span>
+
+                                    <div class="mt-1 flex">
+                                        <i class="bx bxs-right-arrow hidden text-botred md:block"></i>
+                                        <div class="md:-mt-1 md:pl-8">
+                                            <span class="block font-body font-bold text-grey-40">Jan 2023 -
+                                                Present</span>
+                                            <span
+                                                class="block pt-2 font-header text-xl font-bold uppercase text-botred">Technical
+                                                Engineer</span>
+                                            <div class="pt-2 px-2">
+                                                <span class="block font-body text-white">No information to disclose at
+                                                    this time due to not starting yet - I will update at a later date.
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mt-8 flex flex-col text-center md:flex-row md:text-left">
+                            <div class="md:w-2/5">
+                                <div class="flex justify-center md:justify-start">
+                                    <span class="shrink-0">
+                                        <img src="/assets/img/logo-wpe.png" class="h-auto w-32" alt="company logo" />
+                                    </span>
+                                    <div class="relative ml-3 hidden w-full md:block">
+                                        <span
+                                            class="absolute inset-x-0 top-1/2 h-0.5 -translate-y-1/2 transform bg-grey-70"></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="md:w-3/5">
+                                <div class="relative flex md:pl-18">
+                                    <span
+                                        class="absolute left-8 top-1 hidden h-4 w-4 rounded-full border-2 border-grey-40 bg-white md:block"></span>
+
+                                    <div class="mt-1 flex">
+                                        <i class="bx bxs-right-arrow hidden text-botred md:block"></i>
+                                        <div class="md:-mt-1 md:pl-8">
+                                            <span class="block font-body font-bold text-grey-40">Oct 2021 - Jan
+                                                2023</span>
+                                            <span
+                                                class="block pt-2 font-header text-xl font-bold uppercase text-botred">Technical
+                                                Support (L1A)</span>
+                                            <div class="pt-2 px-2">
+                                                <span class="block font-body text-white">Working with our users on
+                                                    dedicated hardware with any issues that may arise on their
+                                                    sites/server such as PHP Fatal errors, Nginx log parsing,
+                                                    and much more. <br>
+                                                    This is via live chat, tickets and phone calls.
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mt-8 flex flex-col text-center md:flex-row md:text-left">
+                            <div class="md:w-2/5">
+                                <div class="flex justify-center md:justify-start">
+                                    <span class="shrink-0">
+                                        <img src="/assets/img/logo-telus.png" class="h-auto w-32" alt="company logo" />
+                                    </span>
+                                    <div class="relative ml-3 hidden w-full md:block">
+                                        <span
+                                            class="absolute inset-x-0 top-1/2 h-0.5 -translate-y-1/2 transform bg-grey-70"></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="md:w-3/5">
+                                <div class="relative flex md:pl-18">
+                                    <span
+                                        class="absolute left-8 top-1 hidden h-4 w-4 rounded-full border-2 border-grey-40 bg-white md:block"></span>
+
+                                    <div class="mt-1 flex">
+                                        <i class="bx bxs-right-arrow hidden text-botred md:block"></i>
+                                        <div class="md:-mt-1 md:pl-8">
+                                            <span class="block font-body font-bold text-grey-40">Oct 2020 - Oct
+                                                2021</span>
+                                            <span
+                                                class="block pt-2 font-header text-xl font-bold uppercase text-botred">Technial
+                                                Support</span>
+                                            <div class="pt-2">
+                                                <span class="block font-body text-white">Outsourced "call center" for
+                                                    some top companies in the industry for technical support assistance
+                                                    with a client base of millions. <br>
+                                                    This was via live chat, tickets and phone calls.</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="bg-grey-50" id="blog">
+                    <div class="container py-16 md:py-20">
+                        <h2
+                            class="text-center font-header text-4xl font-semibold uppercase text-botred sm:text-5xl lg:text-6xl">
+                            I also upload YouTube videos
+                        </h2>
+                        <h4 class="pt-6 text-center font-header text-xl font-medium text-white sm:text-2xl lg:text-3xl">
+                            Check out my YouTube channel here
+                        </h4>
+                        <div class="text-center m-2">
+                            <a class="bg-botred p-2 text-center text-white rounded-lg text-xl font-black hover:bg-red-700 shadow-lg"
+                                href="https://youtube.com/@irlcreate">YouTube</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="relative bg-botred bg-cover bg-center bg-no-repeat py-16 bg-blend-multiply lg:py-24"
+                    style="background-image: url(/assets/img/bg-cta.jpg)">
+                    <div class="container relative z-30">
+                        <h3
+                            class="text-center font-header text-3xl uppercase leading-tight tracking-wide text-white sm:text-4xl lg:text-5xl">
+                            Keep <span class="font-bold">up-to-date</span> <br />
+                            with what I'm up to
+                        </h3>
+                        <div class="text-center m-4">
+                            <a class="bg-nav_bar p-2 text-center text-white rounded-lg text-xl font-black hover:bg-neutral-700 shadow-lg"
+                                href="https://fosstodon.org/@gezel">Mastodon</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-botred">
+                <div class="container flex flex-col justify-between py-6 sm:flex-row">
+                    <p class="text-center font-body text-white md:text-left">
+                        Feel free to fork this from my <a href="https://github.com/tommerty/irlcreate" class="underline hover:text-black">GitHub</a>
+                    </p>
+                    <div class="flex items-center justify-center pt-5 sm:justify-start sm:pt-0">
+                        <a href="/">
+                            <i class="bx bxl-facebook-square text-2xl text-white hover:text-yellow"></i>
+                        </a>
+                        <a href="/" class="pl-4">
+                            <i class="bx bxl-twitter text-2xl text-white hover:text-yellow"></i>
+                        </a>
+                        <a href="/" class="pl-4">
+                            <i class="bx bxl-dribbble text-2xl text-white hover:text-yellow"></i>
+                        </a>
+                        <a href="/" class="pl-4">
+                            <i class="bx bxl-linkedin text-2xl text-white hover:text-yellow"></i>
+                        </a>
+                        <a href="/" class="pl-4">
+                            <i class="bx bxl-instagram text-2xl text-white hover:text-yellow"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <script src="/assets/js/main.js"></script>
+
+
+</body>
+
+</html>
